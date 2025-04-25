@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="alta_producto.css">
+    <title>Modificar Producto</title>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Modificar Producto</h2>
+        <form>
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="tipoProducto">Tipo de Producto</label>
+                    <select id="tipoProducto" name="tipoProducto">
+                        <option value="farmaceutico" selected>Farmacéutico</option>
+                        <option value="cosmetico">Cosmético</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="categoria">Categoría</label>
+                    <select id="categoria" name="categoria">
+                        <option value="analgesicos" selected>Analgésicos</option>
+                        <option value="antibioticos">Antibióticos</option>
+                        <option value="vitaminas">Vitaminas</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" value="Ibuprofeno">
+                </div>
+                <div class="form-group">
+                    <label for="codigoBarra">Código de Barra</label>
+                    <input type="text" id="codigoBarra" name="codigoBarra" value="123456789">
+                </div>
+                <div class="form-group">
+                    <label for="presentacion">Presentación</label>
+                    <select id="presentacion" name="presentacion">
+                        <option value="tabletas" selected>Tabletas</option>
+                        <option value="capsulas">Cápsulas</option>
+                        <option value="jarabe">Jarabe</option>
+                        <option value="crema">Crema</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="marca">Marca</label>
+                    <input type="text" id="marca" name="marca" value="Laboratorio X">
+                </div>
+                <div class="form-group">
+                    <label for="origen">Origen</label>
+                    <select id="origen" name="origen">
+                        <option value="nacional" selected>Nacional</option>
+                        <option value="importado">Importado</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="tipoVenta">Tipo de Venta</label>
+                    <select id="tipoVenta" name="tipoVenta">
+                        <option value="libre" selected>Libre</option>
+                        <option value="receta">Receta</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="alfabeta">Alfabeta</label>
+                    <select id="alfabeta" name="alfabeta">
+                        <option value="si" selected>Sí</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="codigoRegistro">Código Nro. Registro</label>
+                    <input type="text" id="codigoRegistro" name="codigoRegistro" value="AB-1234">
+                </div>
+                
+                <div class="form-group">
+                    <label for="droga">Droga</label>
+                    <input type="text" id="droga" name="droga" value="Ibuprofeno">
+                </div>
+                <div class="form-group">
+                    <label for="laboratorio">Laboratorio</label>
+                    <input type="text" id="laboratorio" name="laboratorio" value="Laboratorio X">
+                </div>
+                <div class="form-group">
+                    <label for="potencia">Potencia</label>
+                    <input type="text" id="potencia" name="potencia" value="400 mg">
+                </div>
+                <div class="form-group">
+                    <label for="accionTerapeutica">Acción Terapéutica</label>
+                    <input type="text" id="accionTerapeutica" name="accionTerapeutica" value="Analgésico">
+                </div>
+                <div class="form-group">
+                    <label for="tamaño">Tamaño</label>
+                    <input type="text" id="tamaño" name="tamaño" value="20 tabletas">
+                </div>
+                <div class="form-group">
+                    <label for="conservacion">Conservación</label>
+                    <select id="conservacion" name="conservacion">
+                        <option value="temperatura_ambiente" selected>Temperatura Ambiente</option>
+                        <option value="refrigerado">Refrigerado</option>
+                        <option value="congelado">Congelado</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="metodoAdministracion">Método de Administración</label>
+                    <select id="metodoAdministracion" name="metodoAdministracion">
+                        <option value="oral" selected>Oral</option>
+                        <option value="topico">Tópico</option>
+                        <option value="inyectable">Inyectable</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="cantidad">Cantidad</label>
+                    <input type="number" id="cantidad" name="cantidad" value="50">
+                </div>
+                <div class="form-group">
+                    <label for="cantidadMinima">Cantidad Mínima</label>
+                    <input type="number" id="cantidadMinima" name="cantidadMinima" value="10">
+                </div>
+                <div class="form-group">
+                    <button type="submit">Modificar Producto</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

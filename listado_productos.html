@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="listado_productos.css">
+    <title>Listado de Productos</title>
+</head>
+<body>
+    <div class="list-container">
+        <h2>Listado de Productos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Tipo de Producto</th>
+                    <th>Categoría</th>
+                    <th>Código de Barra</th>
+                    <th>Presentación</th>
+                    <th>Marca</th>
+                    <th>Origen</th>
+                    <th>Tipo de Venta</th>
+                    <th>Código Nro. Registro</th>
+                    <th>Alfabeta</th>
+                    <th>Droga</th>
+                    <th>Laboratorio</th>
+                    <th>Potencia</th>
+                    <th>Acción Terapéutica</th>
+                    <th>Tamaño</th>
+                    <th>Conservación</th>
+                    <th>Método de Administración</th>
+                    <th>Cantidad</th>
+                    <th>Cantidad Mínima</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <th>1</th>
+                    <td>Ibuprofeno</td>
+                    <td>Farmacéutico</td>
+                    <td>Analgésicos</td>
+                    <td>1234567890123</td>
+                    <td>Tabletas</td>
+                    <td>MarcaX</td>
+                    <td>Nacional</td>
+                    <td>Libre</td>
+                    <td>987654</td>
+                    <td>Sí</td>
+                    <td>Ibuprofeno</td>
+                    <td>Laboratorio X</td>
+                    <td>200 mg</td>
+                    <td>Analgésico</td>
+                    <td>30 unidades</td>
+                    <td>Temperatura Ambiente</td>
+                    <td>Oral</td>
+                    <td>100</td>
+                    <td>10</td>
+                    <td>
+                        <button onclick="location.href='modificar_producto.html'">Modificar</button>
+                        <button onclick="eliminarProducto()">Eliminar</button>
+                    </td>
+                </tr>
+               
+            </tbody>
+        </table>
+        <div class="button-container">
+            <button onclick="location.href='alta_producto.html'">Cargar Nuevo Producto</button>
+        </div>
+    </div>
+
+    <script>
+        function eliminarProducto() {
+            if (confirm("¿Está seguro de que desea eliminar este producto?")) {
+                
+                alert("Producto eliminado (lógica por implementar).");
+            }
+        }
+    </script>
+</body>
+</html>

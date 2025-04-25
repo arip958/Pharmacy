@@ -1,0 +1,321 @@
+opción og: <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="alta_producto.css">
+    <title>Alta de Productos</title>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Alta de Productos</h2>
+        <form method="POST" action="insert_producto.php">
+            <div class="form-grid">
+
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="codigoBarra">Código de Barra</label>
+                    <input type="text" id="codigoBarra" name="codigoBarra" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="descripcion">Descripción</label>
+                    <input type="text" id="descripcion" name="descripcion" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="tipoProducto">Tipo de Producto</label>
+                    <select id="tipoProducto" name="tipoProducto">
+                        <option value="1">Farmacéutico</option>
+                        <option value="2">Bienestar y Cuidado Personal</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="categoria">Categoría</label>
+                    <select id="categoria" name="categoria">
+                        <option value="1">Medicamento</option>
+                        <option value="2">Dermocosmética</option>
+                        <option value="3">Cuidado Capilar</option>
+                        <option value="4">Higiene Personal</option>
+                        <option value="5">Equipo médico</option>
+                        <option value="6">Cuidado Infantil</option>
+                        <option value="7">Ortopédicos</option>
+                        <option value="8">Cosméticos</option>
+                        <option value="9">Alimentos</option>
+                        <option value="10">Salud Sexual</option>
+                        <option value="11">Perfumería</option>
+                        <option value="12">Otro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="accionFarmaceutica">Acción Farmacéutica</label>
+                    <select id="accionFarmaceutica" name="accionFarmaceutica">
+                        <option value="">Ninguna</option>
+                        <option value="1">Analgésicos</option>
+                        <option value="2">Antiinflamatorios</option>
+                        <option value="3">Antigripales</option>
+                        <option value="4">Antiácidos</option>
+                        <option value="5">Antihistamínicos</option>
+                        <option value="6">Laxantes</option>
+                        <option value="7">Sedantes</option>
+                        <option value="8">Antibióticos</option>
+                        <option value="9">Ansiolíticos</option>
+                        <option value="10">Antihipertensivos</option>
+                        <option value="11">Insulina</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="alfabeta">Alfabeta</label>
+                    <select id="alfabeta" name="alfabeta">
+                        <option value="1">Sí</option>
+                        <option value="2">No</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="codigoRegistro">Código Nro. Registro</label>
+                    <input type="text" id="codigoRegistro" name="codigoRegistro">
+                </div>
+                
+                <div class="form-group">
+                    <label for="droga">Droga</label>
+                    <select id="droga" name="droga">
+                        <option value="">Ninguna</option>
+                        <option value="1">Aspirina</option>
+                        <option value="2">Paracetamol</option>
+                        <option value="3">Ibuprofeno</option>
+                        <option value="4">Amoxicilina</option>
+                        <option value="5">Losartan</option>
+                        <option value="6">Insulina</option>
+                        <option value="7">Loratadina</option>
+                        <option value="8">Diazepam</option>
+                        <option value="9">Lorazepam</option>
+                        <option value="10">Clonazepam</option>
+                        <option value="11">Fentanilo</option>
+                        <option value="12">Enalapril</option>
+                        <option value="13">Azitromicina</option>
+                        <option value="14">Omeprazol</option>
+                        <option value="15">Tramadol</option>
+                        <option value="16">Atenolol</option>
+                        <option value="17">Diclofenaco</option>
+                        <option value="18">Salbutamol</option>
+                        <option value="19">Simvastatina</option>
+                        <option value="20">Atorvastatina</option>
+                        <option value="21">Ranitidina</option>
+                        <option value="22">Morfina</option>
+                        <option value="23">Prednisona</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="origen">Origen</label>
+                    <select id="origen" name="origen">
+                        <option value="1">Nacional</option>
+                        <option value="2">Importado</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="laboratorio">Laboratorio</label>
+                    <select id="laboratorio" name="laboratorio">
+                        <option value="">Ninguno</option>
+                        <option value="1">GlaxoSmithKline (GSK)</option>
+                        <option value="2">Johnson & Johnson (J&J)</option>
+                        <option value="3">Colgate-Palmolive</option>
+                        <option value="4">Procter & Gamble (P&G)</option>
+                        <option value="5">Sanofi</option>
+                        <option value="6">Abbott</option>
+                        <option value="7">Reckitt</option>
+                        <option value="8">Novartis</option>
+                        <option value="9">Unilever</option>
+                        <option value="10">Beiersdorf</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="marca">Marca</label>
+                    <select id="marca" name="marca">
+                        <option value="1">Bayer</option>
+                        <option value="2">Pfizer</option>
+                        <option value="3">Tafirol</option>
+                        <option value="4">Johnson & Johnson</option>
+                        <option value="5">Advil</option>
+                        <option value="6">Tylenol</option>
+                        <option value="7">Dolex</option>
+                        <option value="8">L'Oréal</option>
+                        <option value="9">Neutrogena</option>
+                        <option value="10">Oral-B</option>
+                        <option value="11">Nivea</option>
+                        <option value="12">Head & Shoulders</option>
+                        <option value="13">Colgate</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="tipoVenta">Tipo de Venta</label>
+                    <select id="tipoVenta" name="tipoVenta">
+                        <option value="1">Libre</option>
+                        <option value="2">Receta</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="forma">Forma</label>
+                    <select id="forma" name="forma">
+                        <option value="1">Tableta o comprimido</option>
+                        <option value="2">Cápsula</option>
+                        <option value="3">Polvo</option>
+                        <option value="4">Efervescente</option>
+                        <option value="5">Jarabe</option>
+                        <option value="6">Ampolla</option>
+                        <option value="7">Gota</option>
+                        <option value="8">Ungüento</option>
+                        <option value="9">Crema</option>
+                        <option value="10">Gel</option>
+                        <option value="11">Supositorio</option>
+                        <option value="12">Parche transdérmico</option>
+                        <option value="13">Inhalador</option>
+                        <option value="14">Solución inyectable</option>
+                        <option value="15">Emulsión</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="presentacion">Presentación</label>
+                    <input type="text" id="presentacion" name="presentacion" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="metodoAdministracion">Método de Administración</label>
+                    <select id="metodoAdministracion" name="metodoAdministracion">
+                        <option value="1">Oral</option>
+                        <option value="2">Tópica</option>
+                        <option value="3">Intravenosa</option>
+                        <option value="4">Intramuscular</option>
+                        <option value="5">Intradérmica</option>
+                        <option value="6">Subcutánea</option>
+                        <option value="7">Epidural</option>
+                        <option value="8">Intratecal</option>
+                        <option value="9">Ótica</option>
+                        <option value="10">Nasal</option>
+                        <option value="11">Sublingual</option>
+                        <option value="12">Ocular</option>
+                        <option value="13">Rectal</option>
+                        <option value="14">Vaginal</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="conservacion">Conservación</label>
+                    <select id="conservacion" name="conservacion">
+                        <option value="1">Temperatura Ambiente</option>
+                        <option value="2">Refrigerado</option>
+                        <option value="3">Congelado</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="potencia">Potencia</label>
+                    <input type="text" id="potencia" name="potencia">
+                </div>
+
+                <div class="form-group">
+                    <label for="precioUnitario">Precio Unitario</label>
+                    <input type="number" id="precioUnitario" name="precioUnitario" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cantidad">Cantidad</label>
+                    <input type="number" id="cantidad" name="cantidad" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cantidadMinima">Cantidad Mínima</label>
+                    <input type="number" id="cantidadMinima" name="cantidadMinima" required>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit">Guardar Producto</button>
+                </div>
+                
+                <!--INICIO LOTES-->
+                <div class="form-group">
+                    <label for="lotes">Lotes</label>
+                    <select id="lotes" name="lotes[]" multiple>
+                        <option value="">Seleccione Lotes</option>
+                    </select>
+                    <button type="button" id="btnAgregarLote">Agregar Nuevo</button>
+                </div>
+                
+                <!-- Ventana Modal para agregar un nuevo lote -->
+                <div id="modalLote" style="display:none;">
+                    <div class="modal-content">
+                        <h3>Agregar Nuevo Lote</h3>
+                        <form action="procesar_lote.php" method="POST">
+                            <label for="codigoLote">Código de Lote:</label>
+                            <input type="text" id="codigoLote" name="codigoLote" required><br>
+                
+                            <label for="cantidadLote">Cantidad por Lote:</label>
+                            <input type="number" id="cantidadLote" name="cantidadLote" required><br>
+                
+                            <label for="fechaVencimiento">Fecha de Vencimiento:</label>
+                            <input type="date" id="fechaVencimiento" name="fechaVencimiento" required><br>
+                
+                            <input type="submit" value="Guardar">
+                        </form>
+                        <button onclick="cerrarModal()">Cerrar</button>
+                    </div>
+                </div>
+                
+                <!-- Estilo de la ventana emergente -->
+                <style>
+                    .modal-content {
+                        background-color: white;
+                        padding: 20px;
+                        border-radius: 8px;
+                        width: 300px;
+                        position: relative;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+                    }
+                
+                    #modalLote {
+                        display: none;
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(0, 0, 0, 0.5);
+                        z-index: 1000;
+                    }
+                </style>
+
+                <script>
+                    // Mostrar el modal al hacer clic en el botón "Agregar Nuevo Lote"
+                    document.getElementById('btnAgregarLote').addEventListener('click', function() {
+                        var modal = document.getElementById("modalLote");
+                        modal.style.display = "block";
+                    });
+                
+                    // Cerrar el modal
+                    function cerrarModal() {
+                        var modal = document.getElementById("modalLote");
+                        modal.style.display = "none";
+                    }
+                </script>
+
+                <!--FIN LOTES-->
+            </div>
+        </form>
+    </div>
+</body>
+</html>
