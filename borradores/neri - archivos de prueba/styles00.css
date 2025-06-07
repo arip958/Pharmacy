@@ -1,0 +1,155 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+
+/* 1er linea Fondo con degradé verde, 2da linea fondo con img */
+body {
+    background: linear-gradient(to right, #065524, #049227);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    background-image: url('file:///C:/Users/nerin/Myproject/fondooo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.main-container {
+    background: linear-gradient(to right, #06812f, #01440c);
+    height: 100vh;
+    display: flex;
+   /* align-items: center;*/
+    justify-content: center;
+}
+
+/* Caja que contiene imagen + formulario */
+.login-wrapper {
+    display: flex;
+    width: 950px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 1 1 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Imagen lateral */
+.image-side {
+    flex: 1;
+    background-color: #226329;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px;
+}
+
+.image-side img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 0;
+}
+
+/* Contenedor del formulario */
+.login-container {
+    flex: 1;
+    padding: 40px 30px;
+    background-color: #ffffff;
+}
+
+/* Encabezado con logo */
+.login-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.mini-logo {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.login-header h1 {
+    font-size: 30px;
+    color: #000a04;
+}
+
+/* Caja del formulario */
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #000000;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #026618;
+    outline: none;
+}
+
+.options {
+    margin: 10px 0 20px;
+    color: #079236;
+    font-size: 14px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #03680c;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #038b31;
+}
+
+p {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+p a {
+    color: #1c9404;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+
+  
+}

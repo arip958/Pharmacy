@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Fidelización Pharmacy</title>
+    <link rel="stylesheet" href="C:\Users\nerin\Myproject\styles0.css">
+</head>
+<body>
+    <h2>🛡️ Módulo de Fidelización - Pharmacy</h2>
+    
+    <section>
+        <h3>Configuración del sistema de puntos</h3>
+        <label>Puntos por cada $ gastado: 
+            <input type="number" id="valorPunto" value="1">
+        </label>
+        <label>Duración de puntos (meses):
+            <input type="number" id="duracionPuntos" value="12">
+        </label>
+        <label>Puntos necesarios para premio:
+            <input type="number" id="puntosPremio" value="100">
+        </label>
+    </section>
+
+    <section>
+        <h3>Catálogo de Promociones</h3>
+        <form id="formPromo">
+            <input type="text" id="nombrePromo" placeholder="Nombre" required>
+            <input type="text" id="vigenciaPromo" placeholder="Vigencia" required>
+            <input type="text" id="condicionPromo" placeholder="Condición" required>
+            <input type="text" id="tipoPromo" placeholder="Tipo de promoción" required>
+            <button type="submit">Agregar Promoción</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Vigencia</th>
+                    <th>Condición</th>
+                    <th>Tipo</th>
+                </tr>
+            </thead>
+            <tbody id="tablaPromos"></tbody>
+        </table>
+    </section>
+
+    <section>
+        <h3>Clientes Destacados</h3>
+        <form id="formCliente">
+            <input type="text" id="nombreCliente" placeholder="Nombre" required>
+            <input type="number" id="puntosCliente" placeholder="Puntos" required>
+            <button type="submit">Agregar Cliente</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Puntos</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="tablaClientes"></tbody>
+        </table>
+        <h4>🏆 Top Clientes</h4>
+        <ul id="topClientes"></ul>
+    </section>
+
+    <script src="C:\Users\nerin\Myproject\script1.js"></script>
+</body>
+</html>
