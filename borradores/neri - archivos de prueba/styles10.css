@@ -1,0 +1,142 @@
+/* Estilizar el select (Selección de Rol) */
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.input-group select:focus {
+    border-color: #04881a;
+    outline: none;
+}
+/* Reset de estilos */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* 1er linea Fondo con degradé verde, 2da linea fondo con img*/
+body {
+    background: linear-gradient(to right, #065524, #049227);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+ background-image: url('file:///C:/Users/nerin/Myproject/fondooo.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Contenedor principal */
+.login-container {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(13, 255, 86, 0.2);
+    width: 600px;
+    text-align: center;
+}
+
+/* Logo y título */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 26px;
+    color: #013818;
+}
+
+/* Caja de registro */
+.login-box h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Campos de entrada */
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #555;
+    font-weight: bold;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: border 0.4s ease-in-out;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    border-color: #038b0e;
+    outline: none;
+}
+
+/* Estilizar el select */
+.input-group select {
+    cursor: pointer;
+    background-color: white;
+}
+
+/* Botón */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #01552e;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #037003;
+}
+
+/* Enlace de inicio de sesión */
+p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+p a {
+    color: #30a30d;
+    text-decoration: none;
+   
+ font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
