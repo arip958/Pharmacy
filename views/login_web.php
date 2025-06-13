@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pharmacy - Iniciar Sesión</title>
-    <link rel="stylesheet" href="styles00.css">
+    <link rel="stylesheet" href="../styles/login.css">
     
 </head>
 <body>
@@ -14,14 +14,14 @@
 
     <!-- Imagen lateral izquierda -->
     <div class="image-side">
-        <img src="imagen_lateral.jpg" style="height: 100%;" alt="Bienvenido a Pharmacy">
+        <img src="../assets/imagen_lateral.jpg" style="height: 100%;" alt="Bienvenido a Pharmacy">
     </div>
 
     <!-- Login principal -->
     <div class="login-container">
 
         <div class="login-header">
-            <img src="Pharmacy.png.jpg" alt="Pharmacy Logo" class="mini-logo">
+            <img src="../assets/Pharmacy_logo.jpg" alt="Pharmacy Logo" class="mini-logo">
 
             <h1>Pharmacy</h1>
 
@@ -31,13 +31,13 @@
             <h2>¡Bienvenido de nuevo!</h2>
             <form action="#" method="POST">
                 <div class="input-group">
-                    <label for="email">Correo Electrónico</label>
-                    <input type="email" id="email" name="email" placeholder="Ingresa tu correo" required>
+                    <label for="nombre_usuario">Username</label>
+                    <input type="text" id="nombre_usuario" name="nombre_usuario" placeholder="Ingrese su nombre de usuario..." required>
                 </div>
 
                 <div class="input-group">
-                    <label for="password">Contraseña</label>
-                    <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
+                    <label for="contrasena">Password</label>
+                    <input type="password" id="contrasena" name="contrasena" placeholder="Ingrese su contraseña..." required>
                 </div>
 
                 <div class="options">
@@ -46,10 +46,13 @@
 
                 <button type="submit">Iniciar Sesión</button>
 
-                <p>¿Todavía no tienes una cuenta? <a href="registro2.html">Regístrate</a></p>
+                <p>¿Todavía no tienes una cuenta? <a href="../views/signup_cliente.html">Regístrate</a></p>
             </form>
         </div>
 
     </div>
 
 </div>
+
+</body>
+</html>

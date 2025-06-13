@@ -16,7 +16,7 @@ body {
     justify-content: center;
 
 
-    background-image: url('fondooo.png');
+    background-image: url('../assets/fondooo.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -27,7 +27,6 @@ body {
     background: linear-gradient(to right, #06812f, #01440c);
     height: 100vh;
     display: flex;
-   /* align-items: center;*/
     justify-content: center;
 }
 

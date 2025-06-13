@@ -1,0 +1,5 @@
+#id_remember{text-align: center}
+#id_button_ingresar{display: block;
+    margin: 0 auto;}
+
+.validation-error{border-color: red; background-color:  rgba(198, 82, 82, 0.308);}
